@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse</title>
+</head>
+<body>
+    <script>
+        function reverseByHand(originalArray){
+            let reversed = [];
+            for (let i = originalArray.length - 1;i >= 0; i--){
+                reversed.push(originalArray[i]);
+             }
+             return reversed;
+        }
+        console.log(reverseByHand(["you","attention","me"]));
+    </script>
+</body>
+</html>
