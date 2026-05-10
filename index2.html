@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find largest number</title>
+</head>
+<body>
+    <script>
+        function findLargest(numbers) {
+            let largestSoFar=numbers[0];
+
+        
+            for (let i = 1; i<numbers.length; i++){
+                if (numbers[i] > largestSoFar) {
+               largestSoFar = numbers[i];
+            }
+            }
+            return largestSoFar;
+        }
+        const myStones = [13,2,44,95,2];
+        console.log(findLargest(myStones));   
+         </script>
+</body>
+</html>
